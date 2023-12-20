@@ -1,0 +1,12 @@
+---
+const { post } = Astro.props;
+---
+
+<a href={post.url}>
+  <button type="button" onclick="">
+    <p class="title">{post.frontmatter.title}</p>
+    <p>By {post.frontmatter.author}</p>
+  </button>
+</a>
+
+<style></style>
